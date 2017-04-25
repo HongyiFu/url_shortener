@@ -1,3 +1,5 @@
+require 'net/http'
+
 class Url < ApplicationRecord
 	before_validation :prefix_long_url, on: :create
 
